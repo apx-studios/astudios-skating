@@ -27,3 +27,4 @@ server_scripts {
 escrow_ignore {
   'shared/*'
 }
+dependency '/assetpacks'
