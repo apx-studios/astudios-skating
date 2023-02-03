@@ -1,16 +1,8 @@
----------------------------------
----------- Aqade_#1337 ----------
----------------------------------
-
 ### ASTUDIOS | Development - Activity Script ###
 
 This is a skateboard activity script for your city.
 Highly customisable through config.
 Enjoy!
-
-### INFO ###
-
-- script is escrow protected
 
 ### INSTALL ###
 
