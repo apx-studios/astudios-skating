@@ -182,12 +182,10 @@ if Config.Framework == "qb" then
 		local vehicle = GetEntityAttachedTo(GetPlayerPed(player))
 	end)
 elseif Config.Framework == "esx" then
+	ESX = exports["es_extended"]:getSharedObject()
 	local Skating = {}
 	local player = nil
-	ESX = nil
 	Connected = false
-
-	CreateThread(function() while ESX == nil do TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end) Wait(0) end end)
 
 	RegisterNetEvent("astudios-skating:client:start", function() Skating.Start() end)
 
