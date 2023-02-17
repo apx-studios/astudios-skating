@@ -13,8 +13,7 @@ if Config.Framework == "qb" then
         TriggerClientEvent("astudios-skating:client:skate", -1, source)
     end)
 elseif Config.Framework == "esx" then
-    ESX = nil
-    TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+    ESX = exports["es_extended"]:getSharedObject()
     ESX.RegisterUsableItem(Config.ItemName, function(source, item)
         local Player = ESX.GetPlayerFromId(source)
         TriggerClientEvent('astudios-skating:client:start', source, item)
