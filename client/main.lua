@@ -182,7 +182,7 @@ if Config.Framework == "qb" then
 		local vehicle = GetEntityAttachedTo(GetPlayerPed(player))
 	end)
 elseif Config.Framework == "esx" then
-	local Skate = {}
+	local Skating = {}
 	local player = nil
 	ESX = nil
 	Connected = false
