@@ -18,4 +18,4 @@ Enjoy!
 ### PREVIEW ###
 https://www.youtube.com/watch?v=sTfMHY3IFZY
 ### SUPPORT ###
-https://discord.gg/BWMwh57sFP
+https://discord.gg/BWMwh57sFP (Please request help in issues) We do not priorities free resources on our discord!
