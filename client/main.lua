@@ -122,6 +122,8 @@ if Config.Framework == "qb" then
 			PlaceObjectOnGroundProperly(Skating.Entities)
 			if Config.NotificationType.client == "qbcore" then
 				QBCore.Functions.Notify(Config.Language.Info['controls'], "info")
+			elseif Config.NotificationType.client == "astudios" then
+				exports['astudios-notify']:notify("", Config.Language.Info['controls'], 8000, 'info')
 			elseif Config.NotificationType.client == "okok" then
 				exports['okokNotify']:Alert("", Config.Language.Info['controls'], 8000, 'info')
 			end
@@ -307,6 +309,8 @@ elseif Config.Framework == "esx" then
 			PlaceObjectOnGroundProperly(Skating.Entities)
 			if Config.NotificationType.client == "esx" then
 				ESX.ShowNotification(Config.Language.Info['controls'])
+			elseif Config.NotificationType.client == "astudios" then
+				exports['astudios-notify']:notify("", Config.Language.Info['controls'], 8000, 'info')
 			elseif Config.NotificationType.client == "okok" then
 				exports['okokNotify']:Alert("", Config.Language.Info['controls'], 8000, 'info')
 			end
