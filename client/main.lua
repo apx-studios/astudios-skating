@@ -121,7 +121,7 @@ if Config.Framework == "qb" then
 			DetachEntity(Skating.Entities, false, true)
 			PlaceObjectOnGroundProperly(Skating.Entities)
 			if Config.NotificationType.client == "qbcore" then
-				QBCore.Functions.Notify(Config.Language.Info['controls'], "info")
+				QBCore.Functions.Notify(Config.Language.Info['controls'], "primary")
 			elseif Config.NotificationType.client == "astudios" then
 				exports['astudios-notify']:notify("", Config.Language.Info['controls'], 8000, 'info')
 			elseif Config.NotificationType.client == "okok" then
