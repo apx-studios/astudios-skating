@@ -120,13 +120,9 @@ if Config.Framework == "qb" then
 			TaskPlayAnim(PlayerPedId(), "pickup_object", "pickup_low", 8.0, -8.0, -1, 0, 0, false, false, false) Wait(800)
 			DetachEntity(Skating.Entities, false, true)
 			PlaceObjectOnGroundProperly(Skating.Entities)
-			if Config.NotificationType.client == "qbcore" then
-				QBCore.Functions.Notify(Config.Language.Info['controls'], "primary")
-			elseif Config.NotificationType.client == "astudios" then
-				exports['astudios-notify']:notify("", Config.Language.Info['controls'], 8000, 'info')
-			elseif Config.NotificationType.client == "okok" then
-				exports['okokNotify']:Alert("", Config.Language.Info['controls'], 8000, 'info')
-			end
+			QBCore.Functions.Notify(Config.Language.Info['controls'], "primary") -- Comment if you don't wanna use this
+			-- exports['astudios-notify']:notify("", Config.Language.Info['controls'], 8000, 'info') -- Uncomment if you wanna use this
+			-- exports['okokNotify']:Alert("", Config.Language.Info['controls'], 8000, 'info') -- Uncomment if you wanna use this
 		elseif param == "pickupskateboard" then
 			TaskPlayAnim(PlayerPedId(), "pickup_object", "pickup_low", 8.0, -8.0, -1, 0, 0, false, false, false) Wait(600)
 			AttachEntityToEntity(Skating.Entities, PlayerPedId(), GetPedBoneIndex(PlayerPedId(),  28422), -0.1, 0.0, -0.2, 70.0, 0.0, 270.0, 1, 1, 0, 0, 2, 1)
@@ -307,13 +303,9 @@ elseif Config.Framework == "esx" then
 			TaskPlayAnim(PlayerPedId(), "pickup_object", "pickup_low", 8.0, -8.0, -1, 0, 0, false, false, false) Wait(800)
 			DetachEntity(Skating.Entities, false, true)
 			PlaceObjectOnGroundProperly(Skating.Entities)
-			if Config.NotificationType.client == "esx" then
-				ESX.ShowNotification(Config.Language.Info['controls'])
-			elseif Config.NotificationType.client == "astudios" then
-				exports['astudios-notify']:notify("", Config.Language.Info['controls'], 8000, 'info')
-			elseif Config.NotificationType.client == "okok" then
-				exports['okokNotify']:Alert("", Config.Language.Info['controls'], 8000, 'info')
-			end
+			ESX.ShowNotification(Config.Language.Info['controls']) -- Comment if you don't wanna use this
+			-- exports['astudios-notify']:notify("", Config.Language.Info['controls'], 8000, 'info') -- Uncomment if you wanna use this
+			-- exports['okokNotify']:Alert("", Config.Language.Info['controls'], 8000, 'info') -- Uncomment if you wanna use this
 		elseif param == "pickupskateboard" then
 			TaskPlayAnim(PlayerPedId(), "pickup_object", "pickup_low", 8.0, -8.0, -1, 0, 0, false, false, false) Wait(600)
 			AttachEntityToEntity(Skating.Entities, PlayerPedId(), GetPedBoneIndex(PlayerPedId(),  28422), -0.1, 0.0, -0.2, 70.0, 0.0, 270.0, 1, 1, 0, 0, 2, 1)
