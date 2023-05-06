@@ -3,12 +3,6 @@ Config.Debug = false -- True / False for Debug System
 
 Config.Framework = "qb" -- Pick your framework: "qb" or "esx" - Default: "qb"
 
--- Notifications
-Config.NotificationType = { -- 'qbcore' / 'esx' / 'astudios' / 'okok' Choose your notification script.
-    server = 'astudios',
-    client = 'astudios' 
-}
-
 -- Settings
 Config.ItemName = 'skateboard'
 Config.MaxSpeedKmh = 40 -- This does not really change that much unless you get a boost somehow.
